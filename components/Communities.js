@@ -3,7 +3,6 @@ import Image from "next/image";
 import quintess from "../public/images/quintess.jpg";
 import possum from "../public/images/possum.jpg";
 import doug from "../public/images/doug.jpg";
-import { motion } from "framer-motion";
 
 const projects = [
   {
@@ -69,7 +68,7 @@ export default function Projects() {
               <p className="py-1 text-balance text-black dark:text-gray-500">
                 {project.description2}
               </p>
-              <p className="text-blue-500">{project.link2}</p>
+              <a className="text-blue-500" href={project.link2}>{project.link2}</a>
             </div>
           ))}
         </div>
